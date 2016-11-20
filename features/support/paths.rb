@@ -27,7 +27,7 @@ module NavigationHelpers
       movie_similar_path(@movie_id)
 
     when /^the RottenPotatoes home page$/
-      movies_path
+      root_path
 
 
     # Add more mappings here.
