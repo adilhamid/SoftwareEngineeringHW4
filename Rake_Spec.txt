@@ -1,0 +1,9 @@
+/usr/local/rvm/rubies/ruby-1.9.3-p551/bin/ruby -S rspec ./spec/controllers/movies_controller_spec.rb ./spec/models/movie_spec.rb
+...........
+
+Finished in 0.22507 seconds
+11 examples, 0 failures
+
+Randomized with seed 14302
+
+Coverage report generated for Cucumber Features, RSpec to /home/ubuntu/workspace/coverage. 48 / 55 LOC (87.27%) covered.
