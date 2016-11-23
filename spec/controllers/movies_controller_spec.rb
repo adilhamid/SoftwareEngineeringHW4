@@ -74,6 +74,24 @@ describe MoviesController do
     end
   end
   
+  describe 'show' do
+   it 'should show a movie' do
+     m = double(Movie, :id => "10", :title => "blah", :director => nil)
+     Movie.stub(:find).with("10").and_return(m)
+     get :show, {:id => "10"}
+   end
+ end
+ 
+# describe 'index' do
+#   it 'should all movie' do
+#     m = double(Movie, :id => "10", :title => "blah", :director => nil)
+#     @movie = [m]
+#     Movie.stub(:find_all_by_rating).with(["G", "PG", "PG-13", "NC-17", "R"], nil).and_return(@movie)
+#     get :index
+#   end
+# end
+ 
+  
   describe "#destroy" do
     it 'should destroy a movie' do
       m = mock(Movie, :id => "10", :title => "blah", :director => nil)
